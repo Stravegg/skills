@@ -5,7 +5,7 @@ Official Agent Skills for building Rainbow Six Siege applications on Strave, for
 ## Install with `skills.sh`
 
 ```bash
-npx skills add Stravegg/strave-skills
+npx skills add Stravegg/skills
 ```
 
 ## Included skills
