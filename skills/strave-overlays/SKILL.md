@@ -10,7 +10,7 @@ Strave's hosted third-party overlay runtime is not online yet. Build custom OBS 
 ## Architecture
 
 1. Your backend authenticates to Strave Public API v2 using an **OIDC Trusted Workload** token (`createStraveClient({ oidcWorkload })`) and proxies `GET /api/v2/events/{eventId}/stream` to your OBS browser source. Never put Strave OIDC tokens or secrets inside browser HTML.
-2. During development, point directly at the zero-cost Sandbox stream `https://strave.gg/api/v2/sandbox/events/event_sbx_spring_major/stream` or run `strave overlay dev`.
+2. During development, point directly at the zero-cost Sandbox stream `https://strave.gg/api/v2/sandbox/events/event_sbx_eml_s7/stream` or run `strave overlay dev`.
 3. Inside your OBS browser source, subscribe with `createLiveOverlaySource`:
 
 ```ts

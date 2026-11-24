@@ -13,6 +13,6 @@ Choose between two first-class flavors from the same package:
 ## Rules
 
 1. Prefer `oidcWorkload` over static `apiKey` in production. Routes like `replays.createViewerSession` strictly reject static API keys.
-2. Start with `sandbox: true` (or `StraveClient.sandboxLayer()`) for zero-cost integration testing against synthetic Siege data.
+2. Start with `sandbox: true` (or `StraveClient.sandboxLayer()`) for zero-cost integration testing against fixed Siege test data.
 3. Always pass strong `revision` values on writes (`If-Match`) and keep `Idempotency-Key` headers on POST commands.
 4. Use `events.stream(eventId)` (or `streamEvent` in Effect v4) instead of polling loops.
